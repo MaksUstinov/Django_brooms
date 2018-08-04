@@ -1,0 +1,7 @@
+<h1>{{town.name}}</h1>
+
+<ul>
+{% for factory in town.factory_set.all %}
+    <li>{{ factory.name }}</li>
+{% endfor %}
+</ul>
